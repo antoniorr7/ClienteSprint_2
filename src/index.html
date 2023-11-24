@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Chain</title>
+    <link
+      rel="shortcut icon"
+      href="./img/iconos/logo.jpeg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="vistaPrincipal" style="display: none;">
+        <img id="logo" src="img/iconos/logo.jpeg">
+        <div id="divizquierda">
+            <p id="titulo">LISTO?</p>
+            <div id="divtablero">
+                <p id="info">Arrastra un personaje para comenzar</p>
+                <p id="end">Pulsa ENTER para finalizar la partida</p>
+            </div>
+            <p id="nombreapp">CULTURAL CHAIN</p>
+            <button id="restart">
+                <p>RESTART</p>
+                <img src="img/iconos/play.png">
+            </button>
+            <div id="score">
+                <p>SCORE </p>
+                <p id="puntuacion">00</p>
+            </div>
+        </div>
+        <div id="vistaForm" style="visibility: hidden;">
+            <form id="form-end">
+                <p id="over">GAME OVER</p>
+                <label for="nickname">Nickname:</label><br>
+                <input type="text" id="nickname" name="nickname" required>
+                <span id="nickname-error" class="error-message"></span><br><br>
+            
+                <label for="centro">Centro:</label><br>
+                <select id="centro" name="centro" required>
+                <option value="">Selecciona un centro</option>
+                <option value="Virgen de Guadalupe">Virgen de Guadalupe</option>
+                <option value="Clase 2">I.E.S San Roque</option>
+                <option value="Clase 3">Enrique Iglesias</option>
+                </select>
+            
+                <label for="correo">Email:</label><br>
+                <input type="email" id="correo" name="correo" required>
+                <span id="correo-error" class="error-message"></span><br><br>
+            
+                <label for="localidad">Localidad:</label><br>
+                <select id="localidad" name="barlocalidadrio" required>
+                    <option value="">Selecciona una localidad</option>
+                    <option value="Badajoz">Badajoz</option>
+                    <option value="Merida">Mérida</option>
+                    <option value="Caceres">Cáceres</option>
+                    <option value="Sevilla">Sevilla</option>
+                </select>
+            
+                <label for="cp">Código Postal:</label><br>
+                <input type="text" id="cp" name="cp" required>
+                <span id="cp-error" class="error-message"></span><br><br>
+            
+                <button id="send" type="button"">Enviar</button>
+                <span id="status-message" style="margin-left: 100px;"></span>
+            </form>
+        </div>
+        <div id="divderecha">
+            <div>
+                <div>
+                    <button class="boton">
+                        <img src="img/iconos/sol.png">
+                    </button>
+                    <button class="boton">
+                        <img src="img/iconos/ranking.png">
+                    </button>
+                    <button class="boton">
+                        <img src="img/iconos/ajustes.png">
+                    </button>
+                </div>
+                <p>PERSONAJES</p>
+                <div>
+                    <figure>
+                        <img id="kai" src="img/personajes/astronaut 1.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Jake" src="img/personajes/person001.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Baku" src="img/personajes/person002.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Pauline" src="img/personajes/person003.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Ayara" src="img/personajes/person004.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Logan" src="img/personajes/person005.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Manu" src="img/personajes/person006.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Eva" src="img/personajes/person007.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Nalani" src="img/personajes/person008.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="Paul" src="img/personajes/person009.png" class="personaje">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="vistaRanking" style="display: none;">
+        <img id="logo" src="img/iconos/logo.jpeg">
+        <button class="boton">
+            <img src="img/iconos/sol.png">
+        </button>
+        <p class="tituloranking">RANKING</p>
+        <div id="tablonranking">
+            <div>
+                <p>1</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+                <img class="medalla" src="img/iconos/medallaoro.png">
+            </div>
+            <div>
+                <p>2</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+                <img class="medalla" src="img/iconos/medallaplata.png">
+            </div>
+            <div>
+                <p>3</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+                <img class="medalla" src="img/iconos/medallabronce.png">
+            </div>
+            <div>
+                <p>4</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>5</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>6</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>7</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>8</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>9</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>10</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>11</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+            <div>
+                <p>12111</p>
+                <p>CARLOS</p>
+                <p>1ESO</p>
+                <p>GUADALUPE</p>
+                <p>SCORE</p>
+                <p>30123</p>
+                <img src="img/personajes/astronaut 1.png">
+            </div>
+        </div>
+        <button id="botonatras">ATRAS</button>
+        <div id="score">
+            <p>TOP</p>
+            <p>10</p>
+        </div>
+        </div>
+        <div id="vistaSettings" style="display: none;">
+        <img id="logo" src="img/iconos/logo.jpeg">
+        <button class="boton">
+            <img src="img/iconos/sol.png">
+        </button>
+        <span id="status"></span>
+        <span id="respuesta"></span>
+        <div id="panelajustes">
+            <p>AUDIO</p>
+            <div id="panelbotones">
+                <button class="boton">
+                    <img src="img/iconos/audio.png">
+                </button>
+                <button class="boton">
+                    <img src="img/iconos/audioensordecido.png">
+                </button>
+            </div>
+            <p class="tituloranking">DIFICULTAD</p>
+            <button class="boton">FACIL</button>
+            <button class="boton">MEDIO</button>
+            <button class="boton">DIFICIL</button>
+            <button class="boton" onclick="window.location.href ='../doc/home.html'">DOCUMENTACIÓN</button>
+            <p>AJAX</p>
+            <div id="panelbotones">
+                <button class="boton">
+                    GET
+                </button>
+                <button class="boton">
+                    POST
+                </button><br>
+                <button class="boton">
+                    GET-JSON
+                </button>
+            </div>
+        </div>
+        <button id="botonatras">ATRAS</button>
+    </div>
+    <script type="module" src="js/game.js"></script>
+</body>
+</html>
